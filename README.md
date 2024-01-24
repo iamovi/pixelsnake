@@ -18,7 +18,7 @@ Welcome to PixelSnake, a classic Snake game implemented in JavaScript, HTML, and
 - And many more...
 
 ## PLay from here
-[See the Demo](#)
+[Hit Here!](https://iamovi.github.io/pixelsnake/)
 
 ## Controls
 
