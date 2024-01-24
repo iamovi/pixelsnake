@@ -1,0 +1,64 @@
+
+* {
+  font-family: 'Sunshiney', cursive;
+}
+#game-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+#game-info {
+  width: 200px;
+  padding: 20px;
+  border: 0.5px solid #ddd;
+}
+
+#game-board {
+  border: 0.5px solid #ddd;
+  padding: 20px;
+  position: relative;
+  width: 400px;
+  height: 400px;
+}
+
+#score-history {
+  width: 200px;
+  padding: 20px;
+  border: 0.5px solid #ddd;
+}
+
+.snake-part {
+  width: 20px;
+  height: 20px;
+  background-color: orange;
+  position: absolute;
+}
+
+.food {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+}
+
+.food img {
+  width: 100%;
+  height: 100%;
+}
+
+.greeting {
+    font-size: 30px;
+  text-align: left;
+  color: #333;
+}
+
+.mobile-buttons {
+  margin-top: 10px;
+}
+
+.mobile-buttons button {
+  margin: 5px;
+  padding: 10px;
+  font-size: 16px;
+}

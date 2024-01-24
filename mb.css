@@ -1,0 +1,36 @@
+.mb {
+    display: none;
+}
+@media only screen and (max-width: 600px) {
+    div {
+        display: none !important;
+    }
+    .mb {
+        display: block !important;
+        text-align: center;
+        position: fixed;
+        text-align: center;
+        width: 100%;
+        top: 50%;
+        transform: translateY(-50%);
+        animation: fade 3s infinite;
+    }
+    @keyframes fade {
+        0%, 100% {
+            opacity: 0;
+        }
+        50% {
+            opacity: 1;
+        }
+    }
+  }
+
+  #particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+  }
