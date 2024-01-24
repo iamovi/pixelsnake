@@ -2,14 +2,6 @@
 
 Welcome to PixelSnake, a classic Snake game implemented in JavaScript, HTML, and styled with Bootstrap.
 
-## Table of Contents
-- [Features](#features)
-- [Demo](#demo)
-- [Getting Started](#getting-started)
-- [Controls](#controls)
-- [Contributing](#contributing)
-- [License](#license)
-
 ## Features
 - Classic Snake game mechanics
 - Pixel art style for a retro gaming experience
