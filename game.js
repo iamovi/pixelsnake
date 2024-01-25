@@ -18,7 +18,7 @@ while (!userName || userName.trim() === "") {
 // Display personalized greeting
 document.getElementById(
   "greeting"
-).innerHTML = `Hello ${userName}!<br>Welcome to the Snake Game.<br><br><br>Made by Maruf OVi.`;
+).innerHTML = `Hello ${userName}!<br>Welcome to the Snake Game.<br><br><br>_made by Maruf OVi.`;
 
 // Load score history from localStorage on page load
 let scoreHistory =
