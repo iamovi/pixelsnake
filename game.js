@@ -5,6 +5,7 @@ let nextDirection = "right";
 let food = generateFood();
 let score = 0;
 let gameRunning = false;
+let userScrolledManually = false;
 
 // Load user name from localStorage
 let userName = localStorage.getItem("snakeGameUserName");
@@ -143,6 +144,10 @@ function startGame() {
 
 function drawScoreHistory() {
   const scoreHistoryElement = document.getElementById("score-history");
+  const isScrolledToBottom =
+    scoreHistoryElement.scrollHeight - scoreHistoryElement.clientHeight <=
+    scoreHistoryElement.scrollTop + 1;
+
   scoreHistoryElement.innerHTML = "<h4>Score History</h4>";
 
   for (let i = 0; i < scoreHistory.length; i++) {
@@ -150,7 +155,18 @@ function drawScoreHistory() {
     scoreItem.innerText = `Game ${i + 1}: ${scoreHistory[i]}`;
     scoreHistoryElement.appendChild(scoreItem);
   }
+
+  // Scroll to the bottom only if user hasn't scrolled manually
+  if (!userScrolledManually && isScrolledToBottom) {
+    scoreHistoryElement.scrollTop = scoreHistoryElement.scrollHeight;
+  }
 }
+
+// Add event listener for manual scroll
+document.getElementById("score-history").addEventListener("scroll", function () {
+  // Check if user has scrolled manually
+  userScrolledManually = this.scrollTop < this.scrollHeight - this.clientHeight;
+});
 
 function gameLoop() {
   update();

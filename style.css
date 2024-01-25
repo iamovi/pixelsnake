@@ -2,6 +2,7 @@
 * {
   font-family: 'Sunshiney', cursive;
 }
+
 #game-container {
   display: flex;
   justify-content: space-between;
@@ -25,9 +26,25 @@
 
 #score-history {
   width: 200px;
+  height: 350px; 
   padding: 20px;
   border: 0.5px solid #ddd;
+  overflow-x: auto; 
+  position: relative;
 }
+
+#score-history h4 {
+  position: sticky;
+  top: 0;
+  background-color: green;
+  color: white;
+  border-radius: 3px;
+  padding: 8px;
+  z-index: 1;
+  
+}
+
+
 
 .snake-part {
   width: 20px;
